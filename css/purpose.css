@@ -1,0 +1,76 @@
+*{
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#wrap{
+    width: 360px;
+    height: 640px;
+    background-color: aliceblue;
+}
+
+#wrap>h1{
+    width: 360px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+#wrap>#contents{
+    width: 360px;
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+#wrap>#contents>#ability-area{
+    width: 340px;
+    height: 150px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+
+#wrap>#contents>#ability-area>span{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+}
+
+#wrap>#contents>#ability-area>ul>li{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: violet;
+}
+
+#wrap>#contents>#hobby-area{
+    width: 340px;
+    height: 150px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+
+#wrap>#contents>#hobby-area>span{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-color: lightpink;
+}
+
+#wrap>#contents>#hobby-area>ul>li{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: violet;
+}
