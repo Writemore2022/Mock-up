@@ -1,0 +1,98 @@
+#recommend {
+  display: none;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#title {
+  width: 50%;
+  max-width: 300px;
+  font-size: medium;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+#recommends {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+/* .recommend1 {
+  width: 75vw;
+  max-width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+} */
+
+.recommend1,
+.recommend2,
+.recommend3 {
+  box-sizing: border-box;
+  text-align: start;
+  border: 1px double black;
+  border-radius: 20px;
+  list-style: none;
+  width: 240px;
+  height: 150px;
+  margin: 10px;
+  line-height: 1.5;
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
+}
+
+#recommends div h3 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+#recommends div li {
+  margin-left: 40px;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#recommends div p {
+  margin-top: 10px;
+  margin-left: 30px;
+  /* margin-bottom: 30px; */
+  font-size: 10px;
+}
+#email {
+  width: 50vw;
+  min-width: 360px;
+  max-width: 400px;
+  margin-top: 10px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: small;
+}
+
+.groupName1 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.groupLocation1,
+.groupPurpose1 {
+  margin-left: 40px;
+  font-size: 10px;
+  /* color: rgba(0, 0, 0, 0.5); */
+}
