@@ -1,79 +1,42 @@
 #purposes {
   display: none;
-  width: 80%;
+  width: 80vw;
   text-align: center;
   border-radius: 20px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-#wrap {
-  width: 360px;
+/* #wrap {
+  width: 80vw;
   height: 640px;
   background-color: aliceblue;
-}
+} */
 
-#wrap > h1 {
-  width: 360px;
+/* #wrap > h1 {
+  width: 80vw;
   height: 100px;
   background-color: lightblue;
-}
+} */
 
-#wrap > #contents {
-  width: 360px;
+/* #wrap > #contents {
+  width: 80vw;
   height: 500px;
   background-color: antiquewhite;
-}
+} */
 
-#wrap > #contents > #ability-area {
-  width: 340px;
-  height: 150px;
-  margin: 10px;
+/* #wrap > #contents > ul {
+  width: 80vw;
+  margin-top: 10px;
   background-color: whitesmoke;
-}
+  display: flex;
+} */
 
-#wrap > #contents > #ability-area > span {
-  display: block;
-  float: left;
-  width: 50px;
-  height: 50px;
+#wrap > #contents > #area {
+  margin-top: 10px;
   background-color: lightpink;
+  border: 1px solid black;
+  text-align: center;
 }
 
-#wrap > #contents > #ability-area > ul > li {
-  margin-left: 30px;
-  margin-bottom: 10px;
-  width: 200px;
-  height: 30px;
-  background-color: violet;
-}
-
-#wrap > #contents > #hobby-area {
-  width: 340px;
-  height: 150px;
-  margin: 10px;
-  background-color: lightgrey;
-}
-
-#wrap > #contents > #hobby-area > span {
-  display: block;
-  float: left;
-  width: 50px;
-  height: 50px;
-  background-color: lightpink;
-}
-
-#wrap > #contents > #hobby-area > ul > li {
-  margin-left: 30px;
-  margin-bottom: 10px;
-  width: 200px;
-  height: 30px;
-  background-color: violet;
+#wrap > #contents > #area > input {
+  width: 40vw;
 }

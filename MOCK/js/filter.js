@@ -1,6 +1,7 @@
 const first = document.querySelector('#locations');
 const second = document.querySelector('#purposes');
 const recommend = document.querySelector('#recommend');
+const info = document.querySelector('#groupInfo');
 
 let select = {};
 
@@ -63,8 +64,66 @@ function addRecommend() {
   groupName1.innerHTML = recommendGroup()[0].name;
 
   const groupLocation1 = document.querySelector('.groupLocation1');
-  groupLocation1.innerHTML = '지역: ' + recommendGroup()[0].location;
+  groupLocation1.innerHTML = '지역: 대구 ' + recommendGroup()[0].location;
 
   const groupPurpose1 = document.querySelector('.groupPurpose1');
   groupPurpose1.innerHTML = '목적: ' + recommendGroup()[0].purpose;
+
+  const groupName2 = document.querySelector('.groupName2');
+  groupName2.innerHTML = recommendGroup()[1].name;
+
+  const groupLocation2 = document.querySelector('.groupLocation2');
+  groupLocation2.innerHTML = '지역: 대구 ' + recommendGroup()[1].location;
+
+  const groupPurpose2 = document.querySelector('.groupPurpose2');
+  groupPurpose2.innerHTML = '목적: ' + recommendGroup()[1].purpose;
+
+  const groupName3 = document.querySelector('.groupName3');
+  groupName3.innerHTML = recommendGroup()[2].name;
+
+  const groupLocation3 = document.querySelector('.groupLocation3');
+  groupLocation3.innerHTML = '지역: 대구 ' + recommendGroup()[2].location;
+
+  const groupPurpose3 = document.querySelector('.groupPurpose3');
+  groupPurpose3.innerHTML = '목적: ' + recommendGroup()[2].purpose;
+}
+
+function reset() {
+  recommend.style.display = 'none';
+  first.style.display = 'block';
+  first.style.animation = 'none';
+  first.style.animation = 'none';
+
+  select = {};
+}
+
+function goGroupInfo() {
+  recommend.style.WebkitAnimation = 'fadeOut 1s';
+  recommend.style.animation = 'fadeOut 1s';
+  setTimeout(() => {
+    info.style.WebkitAnimation = 'fadeIn 1s';
+    info.style.animation = 'fadeIn 1s';
+    setTimeout(() => {
+      recommend.style.display = 'none';
+      info.style.display = 'block';
+    }, 450);
+  });
+
+  infoList();
+}
+
+function infoList() {
+  const groupName = document.querySelector('#groupName');
+
+  if (recommendGroup()[0].name == '이스터에그') {
+    groupName.innerHTML =
+      '<hr />' + '이 페이지를 캡쳐해서 보여주면 커피를 사준대요!';
+  }
+}
+
+function goBack() {
+  info.style.display = 'none';
+  recommend.style.display = 'block';
+  recommend.style.animation = 'none';
+  recommend.style.animation = 'none';
 }

@@ -1,0 +1,23 @@
+#groupInfo {
+  display: none;
+  width: 80vw;
+}
+
+#mmm {
+  margin-top: 20px;
+  display: flex;
+  height: 500px;
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.goBack {
+  width: 80vw;
+  height: 5vh;
+  margin-top: 10px;
+  border-radius: 20px;
+}
